@@ -17,5 +17,10 @@ h1 {
 /* Applies to all elements with <... class="someclass"> specified. */
 .someclass { color: red; }
 
+	.responsive {
+  width: 60%;
+  height: auto;
+}
+
 /* Applies to the element with <... id="someid"> specified. */
 #someid { color: green; }
