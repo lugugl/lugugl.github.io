@@ -98,7 +98,7 @@ body{
       let isMobileDevice = regexp.test(details);
       if (isMobileDevice)
 	  {
-        document.write('<div>  <form action="https://europe.google.com/search?q=" class="searchform" method="get" name="searchform" target="_self"><center><input name="LuGoogle" type="hidden" value=""><input type="search" id="inputtext" style="height:41px; width:95%; font: 16px Helvetica; box-shadow: 0px 1px 4px 0px #9c9c9c; transition: box-shadow .9s; border-radius: 20px; border: 1px solid #ccc; "autocomplete="off" class="form-control search" name="q" placeholder="  &#x1F50E; "  type="search" list="poisklist"> <br><br><button class="button" type="href"style="background-color: #F8F9FA;color: #1c1c1c;border: 1px solid #c2c2c2; box-shadow: 0px 0px 0px 0px #c7c7c7; transition: box-shadow .3s; padding: 8px; border-radius: 4px; margin-top: 12px; cursor: pointer; font: 15px Helvetica, regular; "><b>Найти в Google</b></button> <a href="https://bit.ly/lugoogle_mobile" target="_blank" rel="noopener"><button class="button" type="link"style="background-color: #F8F9FA;color: #1c1c1c;border: 1px solid #c2c2c2; box-shadow: 0px 0px 0px 0px #c7c7c7; transition: box-shadow .3s; padding: 8px; border-radius: 4px; margin-top: 22px; cursor: pointer; font: 15px Helvetica, regular; ">Открыть Google.com</butt></a></form></div>');
+        document.write('<div>  <form action="https://europe.google.com/search?q=" class="searchform" method="get" name="searchform" target="_self"><center><input name="LuGoogle" type="hidden" value=""><input type="search" id="inputtext" style="height:41px; width:95%; font: 16px Helvetica; box-shadow: 0px 1px 4px 0px #9c9c9c; transition: box-shadow .9s; border-radius: 20px; border: 1px solid #ccc; "autocomplete="off" class="form-control search" name="q" placeholder="  &#x1F50E; "  type="search" list="poisklist"> <br><br><button class="button" type="href"style="background-color: #F8F9FA;color: #1c1c1c;border: 1px solid #c2c2c2; box-shadow: 0px 0px 0px 0px #c7c7c7; transition: box-shadow .3s; padding: 8px; border-radius: 4px; margin-top: 12px; cursor: pointer; font: 15px Helvetica, regular; "><b>Найти в Google</b></button> <a href="https://bit.ly/lugoogle_mobile" target="_blank" rel="noopener"><button class="button" type="link"style="background-color: #F8F9FA;color: #1c1c1c;border: 1px solid #c2c2c2; box-shadow: 0px 0px 0px 0px #c7c7c7; transition: box-shadow .3s; padding: 8px; border-radius: 4px; margin-top: 22px; cursor: pointer; font: 15px Helvetica, regular; ">Открыть Google.com</butt></a></a>       <br>br><br>         <buttoneblan class="eblan" id="eblan" type="link" style="background-color: #F8F9FA;color: #1c1c1c;border: 1px solid #c2c2c2; box-shadow: 0px 0px 0px 0px #c7c7c7; transition: box-shadow .3s; padding: 8px; border-radius: 4px; margin-top: 22px; cursor: pointer; font: 14px Helvetica, italic; ">Скачать программу</buttoneblan></form></div>');
       }
 	  else
 	  {
@@ -168,7 +168,14 @@ function reloadIFrame() {
 <p style="text-align:center"><span style="color:#ecf0f1"><span style="font-size:18px"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="background-color:#2980b9">&nbsp;СКАЧАТЬ ПРОГРАММУ ДЛЯ Windows&nbsp;</span></span></span></span></p></a>
 <a href="https://github.com/lugugl/lugugl.github.io/" target="_blank">
 <p style="text-align:center"><span style="font-size:16px"><span style="color:#ecf0f1"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="background-color:#2980b9">&nbsp;исходный код на github&nbsp;</span></span></span></span></p></a>
-
+<hr /><p style="text-align:center">&nbsp;</p></div>
+</div>
+  
+<div id="pidoras" class="modal"><div class="modal-content"><span class="close">&times;</span>
+<p style="text-align:center"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="font-size:20px">Бесплатная и open source программа для разблокировки Google на компьютере без VPN.</span></span></p>
+<hr />
+<img src="https://i.ibb.co/8zZZbzj/GS20220806183732.gif" class="center">
+<p style="text-align:center"><span style="font-size:16px"><span style="color:#ecf0f1"><span style="font-family:Tahoma,Geneva,sans-serif"><span style="background-color:#2980b9">&nbsp;исходный код на github&nbsp;</span></span></span></span></p></a>
 <hr /><p style="text-align:center">&nbsp;</p></div>
 </div>
 
@@ -180,6 +187,30 @@ function reloadIFrame() {
 var modal = document.getElementById("myModal");
 // Get the button that opens the modal
 var btn = document.getElementById("gay");
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event)
+	{
+  if (event.target == modal)
+	{
+    modal.style.display = "none";
+	}
+}
+</script>
+		<script>
+// Get the modal
+var modal = document.getElementById("pidoras");
+// Get the button that opens the modal
+var btn = document.getElementById("eblan");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 // When the user clicks on the button, open the modal
