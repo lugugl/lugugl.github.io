@@ -11,56 +11,6 @@
 
 
 
-<script type="text/javascript">
-//<![CDATA[
-function zeit()
-{
-    if(document.cookie)
-    {
-        a = document.cookie;
-        cookiewert = "";
-        while(a.length > 0)
-        {
-            cookiename = a.substring(0,a.indexOf('='));
-            if(cookiename == "zeitstempel")
-            {
-                cookiewert = a.substring(a.indexOf('=')+1,a.indexOf(';'));
-                break;
-            }
-            a = a.substring(a.indexOf(cookiewert)+cookiewert.length+1,a.length);
-        }
-        if(cookiewert.length > 0)
-        {
-            alter = new Date().getTime() - cookiewert;
-
-            if(alter > 3600)
-            {   
-                document.cookie = "zeitstempel=" + new Date().getTime() + ";";
-                location.reload(true);
-            }
-            else
-            {
-                return;
-            }
-        }
-        else
-        {
-            document.cookie = "zeitstempel=" + new Date().getTime() + ";";
-            location.reload(true);
-        }
-    }
-    else
-    {
-        document.cookie = "zeitstempel=" + new Date().getTime() + ";";
-        location.reload(true);
-    }
-}
-zeit();
-//]]>
-</script>
-
-
-
 
 		
 </head>
@@ -71,16 +21,11 @@ zeit();
 <br>
 <script>
 document.write(randPassword);
+var urlick = "https://google.com/"+randPassword;
+document.getElementById("nigaf").src = urlick;
 </script>
 <br>
 
-
-<script>
-window.setInterval("reloadIFrame();", 2222);
-function reloadIFrame() {
-document.getElementById("nigaf").src=nigaf.src;
-}
-</script>
 <iframe id="nigaf" src=https://google.com/randPassword style="border-width:0" allow="autoplay width=300px height=480px frameborder="0" scrolling="no"></iframe>
 
 <script>
@@ -93,6 +38,7 @@ function reloadIFrame() {
 
 
 <script>
+document.getElementById("nigaf").src = urlick;
 var maximum = 7777;
 var minimum = 2000;
 var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
