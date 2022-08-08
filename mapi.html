@@ -6,6 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="-1" />
 <meta name=”robots” content=”noindex,nofollow”>
+  <meta http-equiv=”refresh” content=”6″>
 </head>
 <body>
 <h2>покинь эту страницу, это техническая страница.</h2>	
@@ -16,7 +17,7 @@
   <script>
     caches.open('v1').then((cache) => {
   cache.delete('*').then((response) => {
-    window.location.replace(window.location.href);
+    return(0);
   });
 })
   </script>
