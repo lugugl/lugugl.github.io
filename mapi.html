@@ -6,7 +6,7 @@
 <meta http-equiv="Pragma" content="no-cache" />
 <meta http-equiv="Expires" content="-1" />
 <meta name=”robots” content=”noindex,nofollow”>
-  <meta http-equiv=”refresh” content=”3″>
+<script type="text/javascript" src="main.js?v=12392823"></script>
 </head>
 <body>
 <h2>покинь эту страницу, это техническая страница.</h2>	
@@ -43,9 +43,8 @@ var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum
 document.write(randomnumber);
 window.setTimeout( function() {
   
-      caches.open('v1').then((cache) => {
-  cache.delete().then((response) => {
-  location.reload();
+cache.delete('');
+location.reload();
   });
 })
   
