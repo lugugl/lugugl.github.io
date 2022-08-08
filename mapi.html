@@ -25,6 +25,7 @@ document.getElementById("nigaf").src = urlick;
     function prepareFrame() {
         var ifrm = document.createElement("iframe");
         ifrm.setAttribute("src", "https://drive.google.com/file/d/1bcw5vW7WJRmRIu4fJpnUGk2XdtnCql70/preview");
+        ifrm.setAttribute("id", randPassword);
         ifrm.style.width = "640px";
         ifrm.style.height = "480px";
         document.body.appendChild(ifrm);
