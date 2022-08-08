@@ -44,11 +44,11 @@ window.setTimeout( function() {
   
       caches.open('v1').then((cache) => {
   cache.delete().then((response) => {
-    window.location.replace(window.location.href);
+  location.reload();
   });
 })
   
-window.location.replace(window.location.href);
+location.reload();
   
 }, randomnumber);
 </script>
