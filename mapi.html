@@ -21,12 +21,18 @@ document.getElementById("nigaf").src = urlick;
   
   
   
-<script>  
-const iframe = document.createElement('iframe');
-iframe.id = gaysex;
-iframe.src = "https://stackoverflow.com";
-document.body.appendChild(iframe);
-</script>
+<script type="text/javascript">
+    function prepareFrame() {
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("src", "http://google.com/");
+        ifrm.style.width = "640px";
+        ifrm.style.height = "480px";
+        document.body.appendChild(ifrm);
+    }
+</script> 
+  <script>
+    prepareFrame();
+  </script> 
   
   
 <script>
