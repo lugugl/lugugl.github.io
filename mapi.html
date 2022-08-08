@@ -23,20 +23,11 @@
 <script>
 document.write(randPassword);
 var urlick = "https://drive.google.com/file/"+randPassword;
-  var urlica = "https://drive.google.com/file/a"+randPassword;
-  var urlicb = "https://drive.google.com/file/b"+randPassword;
-  var urlicc = "https://drive.google.com/file/c"+randPassword;
 document.getElementById("nigaf").src = urlick;
 </script>
-<iframe id="nigaf" src=https://drive.google.com/file/ style="border-width:0" width=300px height=480px frameborder="0"></iframe>
-<iframe id="niga" src=https://drive.google.com/file/a style="border-width:0" width=300px height=480px frameborder="0"></iframe>
-<iframe id="nigb" src=https://drive.google.com/file/b style="border-width:0" width=300px height=480px frameborder="0"></iframe>
-<iframe id="nigac" src=https://drive.google.com/file/c style="border-width:0" width=300px height=480px frameborder="0"></iframe>
+<iframe id="nigaf" src=https://drive.google.com/file/ style="border-width:0" width=300px height=480px></iframe>
 <script>
 document.getElementById("nigaf").src = urlick;
-  document.getElementById("niga").src = urlica;
-  document.getElementById("nigb").src = urlicb;
-  document.getElementById("nigc").src = urlicc;
 var maximum = 6666;
 var minimum = 1973;
 var randomnumber = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
